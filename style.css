@@ -1,0 +1,303 @@
+
+
+.header:after,.header:before{
+     content: "";
+    display: table;
+    clear: both
+}
+.header {
+    /*padding: 0.01em 20px;*/
+	padding: 0.01em 20px;
+}
+/*.hbc {
+    color: #fff!important;
+    background-color: white!important
+	
+	}*//*#00498D*/
+	
+	
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  border: 5px solid #00498D;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 80px; 
+    
+    
+}
+
+
+#menu ul
+{
+padding: 0;
+float:right;
+text-align: center;
+margin-right:10px;
+}
+#menu ul li
+{
+cursor:pointer;
+list-style-type:none;
+display:inline-block;
+
+}
+
+#menu ul li a
+{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 15px;
+  border-radius:8px;
+  width:60px;
+  font-size: 12px;
+  
+}
+
+a{
+	background-color: #333333;
+}
+
+
+#menu ul li a:hover
+{
+color:white;
+ background-color: #00498D;
+}
+
+
+
+.center {
+  display: inline;
+
+  width: 15%;
+  border-radius: 50%;
+  
+ }
+ 
+ #companyname {
+  color: #00498D;
+  text-align:center;
+  font-weight:bold;
+  
+
+}
+
+#blk1_1
+{
+	background-color: #00498D;
+	color: #fff;
+	padding :10px;
+	
+}
+#blk3_1
+{
+	background-color: #00498D;
+	color: #fff;
+	padding :10px;
+	
+}
+#blk_1
+{
+	background:white;
+}
+.blk_two_header
+{
+	background-color: #00498D;
+	color: #fff;
+	padding :5px;
+	font-size: 12px;
+}
+.blk_three_header
+{
+	background-color: #00498D;
+	color: #fff;
+	padding :5px;
+	font-size: 12px;
+	height:13px;
+}
+.blk_one_header
+{
+	background-color: #fff;
+	color: #fff;
+	padding :5px;
+	font-size: 12px;
+	height:13px;
+}
+.blk_zero_header
+{
+	background-color: #fff;
+	color: #fff;
+	padding :5px;
+	font-size: 12px;
+	height:8px;
+}
+
+.topnav {
+  overflow: hidden;
+  /*background-color: #333;*/
+  position: relative;
+  margin: 1px; 
+  
+}
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  /*padding: 14px 16px;*/
+  padding:12px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+.topnav a.icon {
+ /* background: black;*/
+  display: block;
+  position: absolute;
+  top: 0;
+  /*right: 0;*/
+  
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #7393B3;
+  margin: 6px 0;
+  transition: 0.4s;
+   border-radius: 4px;
+}
+
+
+
+.topnav a:hover {
+  background-color: #00498D;
+}
+
+.topnav div.hamburger {
+  display: block;
+  float: right;
+  top: 0;
+}
+
+
+.active {
+  background-color: #00498D;
+  color: white;
+}/*
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-bars:before {
+	content: "\f0c9";
+}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #B0B0B0;
+  font-size: 12px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+th{
+ background-color: #f2f2f2;
+}
+
+input[type=text], select, textarea{
+  width: 45%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.blk_dt
+{
+	padding: 25px;
+	font-size: 12px;
+}
+#button0
+{
+ padding: 8px;	
+ border: 1px solid #ccc;
+ background-color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  color:white;
+  font-weight:bold;
+  font-size: 12px;
+  margin-left:220px;
+  
+}
+#button1
+{
+	
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #00498D;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  color:white;
+  font-weight:bold;
+  font-size: 12px;
+}
+#box1,#box3{
+	background-color: #f2f2f2;
+}
+.blk_two_dt
+{
+	 padding: 8px;
+}
+#menu div{
+	padding:10px;
+}
+/*tr:nth-child(even){background-color: #f2f2f2}*/
+
+
+@media screen and (max-width: 600px) {
+	.center {
+		width: 35%;
+		padding:10px;
+	}
+	#button0
+	{
+
+	  margin-left:60px;
+	  
+	}
+	.bar1, .bar2, .bar3 {
+		 width: 25px;
+		  height: 2px;
+		  
+	}
+}
+ 
+ 
+ @media screen and (max-width: 300px) {
+	
+	#button0
+	{
+
+	  margin-left:2px;
+	  
+	}
+}

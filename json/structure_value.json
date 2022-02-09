@@ -1,0 +1,28 @@
+{
+	"block":
+	{
+		 "block1": 
+		[
+			{"dataset":"This is a dummy text.This is a dummy text.", "tagid":"#p1","tp":"1"},
+			{"dataset":"This is a dummy text.This is a dummy text.", "tagid":"#p2","tp":"1"}
+		],
+		
+		 "block2_one": 
+	    [
+		
+			{"dataset":"Objective", "tagid":"To estimate the economic burden"},
+			{"dataset":"Population", "tagid":""},
+			{"dataset":"Perspective", "tagid":"Health Care Payer"},
+			{"dataset":"Time Horizon", "tagid":"User selectable 1-5 Years"},
+			{"dataset":"Cost", "tagid":""},
+			{"dataset":"Currency", "tagid":"2021"}
+		],
+		 "block2_two": 
+	    [
+			{"dataset":"1", "tagid":"#box1","tp":"2"},
+			{"dataset":"2", "tagid":"#box2","tp":"2"},
+			{"dataset":"test", "tagid":"#box3","tp":"1"}
+		]
+	
+	}
+}
