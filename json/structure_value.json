@@ -1,0 +1,55 @@
+{
+	"block":
+	{
+		 "block1": 
+		[
+			{"dataset":"This is a dummy text.This is a dummy text.", "tagid":"#p1","tp":"1"},
+			{"dataset":"This is a dummy text.This is a dummy text.", "tagid":"#p2","tp":"1"}
+		],
+		
+		 "block2_one": 
+	    [
+		
+			{"dataset":"Objective", "tagid":"To estimate the economic burden"},
+			{"dataset":"Population", "tagid":""},
+			{"dataset":"Perspective", "tagid":"Health Care Payer"},
+			{"dataset":"Time Horizon", "tagid":"User selectable 1-5 Years"},
+			{"dataset":"Cost", "tagid":""},
+			{"dataset":"Currency", "tagid":"2021"}
+		],
+		 "block2_two": 
+	    [
+			{"dataset":"1", "tagid":"#box1","tp":"2"},
+			{"dataset":"2", "tagid":"#box2","tp":"2"},
+			{"dataset":"test", "tagid":"#box3","tp":"1"}
+		],
+		"block3": 
+	    [
+			 {"dataset":"10,00,000", "tagid":"#box4","tp":"2"},
+			 {"dataset":"0.00066%", "tagid":"#box5","tp":"2"},
+			 {"dataset":"7", "tagid":"#box6","tp":"2"},
+			 {"dataset":"0.00032%", "tagid":"#box7","tp":"2"},
+			 {"dataset":"3", "tagid":"#box8","tp":"2"},
+			 {"dataset":"0.00074%", "tagid":"#box9","tp":"2"},
+			 {"dataset":"7", "tagid":"#box10","tp":"2"},
+			 {"dataset":"false", "tagid":"#opt2","tp":"3"},
+			{"dataset":"true", "tagid":"#opt1","tp":"3"},
+			 {"dataset":"1", "tagid":"#sel_type","tp":"4"}
+		],
+		"block4": 
+	    [
+			{"dataset":"80.0%", "tagid":"#box13","tp":"2"},
+			{"dataset":"4", "tagid":"#box14","tp":"2"},
+			{"dataset":"10.0%", "tagid":"#box15","tp":"2"},
+			{"dataset":"1", "tagid":"#box16","tp":"2"},
+			{"dataset":"10.0%", "tagid":"#box17","tp":"2"},
+			{"dataset":"1", "tagid":"#box18","tp":"2"},
+			{"dataset":"5", "tagid":"#box20","tp":"2"},
+			{"dataset":"5", "tagid":"#box12","tp":"2"},
+			{"dataset":"false", "tagid":"#opt3","tp":"3"},
+			{"dataset":"true", "tagid":"#opt4","tp":"3"}
+			
+		]
+	
+	}
+}

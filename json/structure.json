@@ -1,0 +1,55 @@
+{
+   "block":
+   {
+	   
+	   "blk1":
+	   {
+		   "d1":"<p class=\"blk_one_header\"><\/p>",
+		   "d2":"<div id=\"blk1_1\"><span id=\"p1\">This is a dummy text.This is a dummy text.<\/span><br><i><span id=\"p2\">This is dummy text.This is a dummy text.<\/span><\/i><\/div>",
+		   "d3":"<div class=\"blk_dt\"><input align=\"center\" type=\"button\" id=\"button0\" name=\"button0\" value=\"Enter Model\"><\/div>"  
+	   },
+	   "blk2_part1":
+	   {
+		   "d1":"<p class=\"blk_one_header\"><\/p><p class=\"blk_two_header\">Model Overview<\/p><div><table border=\"1\">",
+		   "d2":"<tr>",
+		   "d3":"<\/tr>",
+		   "d4":"<th>",
+		   "d5":"<\/th>",
+		   "d6":"<td>",
+		   "d7":"<\/td>",
+		   "d8":"<\/table><\/div>"
+	   },
+	   "blk2_part2":
+	   {
+		   "d1":"<p class=\"blk_two_header\">Model Instruction<\/p><div>",
+		   "d2":"<div class=\"blk_dt\"><input type=\"text\" id=\"box1\" name=\"box1\" readonly><span class=\"blk_two_dt\"> = Default value(modifiable)<\/span><\/div>",
+		   "d3":"<div class=\"blk_dt\"><input type=\"button\" id=\"button1\" name=\"button1\" value=\"Restore Defaults\"><span class=\"blk_two_dt\"> = Reset Default Model(setting)<\/span><\/div>",
+		   "d4":"<div class=\"blk_dt\"><input type=\"text\" id=\"box2\" name=\"box2\" readonly><span class=\"blk_two_dt\">= calculated cell(non-modifiable)<\/span><\/div>",
+		   "d5":"<div class=\"blk_dt\"><textarea id=\"box3\" name=\"box3\" readonly> <\/textarea><span class=\"blk_two_dt\">= cell comment(modifiable)<\/span><\/div><\/div>"
+	   },
+	   "blk3":
+	   {
+		   "d1":"<p class=\"blk_three_header\"><\/p>",
+		   "d2":" <div class=\"blk_dt3\"><span class=\"sm\">Select Method : <\/span><input type=\"radio\" id=\"opt1\" name=\"sel_method\">Epidemology Based<input type=\"radio\" id=\"opt2\" name=\"sel_method\">Direct Entry<\/div>",
+		   "d3":"<div class=\"blk_dt3\"><span class=\"sm\">Type : <\/span><select id=\"sel_type\"><option><\/option><option value='1'>Diagonosed Prevalence<\/option><option value='2'>Option 2<\/option> <\/select><\/div>",
+		   "d4":"<div class=\"blk_dt3\"> <span class=\"sm\">Lives : <\/span><input type=\"text\" id=\"box4\" name=\"box4\" ><\/div>",
+		   "d5":"<span class=\"sp1\">Prevalence  <\/span><br>",
+		   "d6":" <div class=\"blk_dt31\"><span class=\"sp\">I Patients  <\/span><input type=\"text\" id=\"box5\" name=\"box5\" ><input type=\"text\" id=\"box6\" name=\"box6\"  ><\/div><br>",
+		   "d7":"<div class=\"blk_dt31\"><span class=\"sp\">II Patients  <\/span><input type=\"text\" id=\"box7\" name=\"box7\"  ><input type=\"text\" id=\"box8\" name=\"box8\"  ><\/div><br>",
+		   "d8":"<div class=\"blk_dt31\"><span class=\"sp\">III Patients  <\/span><input type=\"text\" id=\"box9\" name=\"box9\"  ><input type=\"text\" id=\"box10\" name=\"box10\" ></div>"
+		   
+	   },
+	     "blk4":
+	   {
+		   "d1":" <p class=\"blk_three_header\"><\/p>",
+		   "d2":"<div class=\"blk_dt3\"><span class=\"sm\">Select Method : <\/span><input type=\"radio\" id=\"opt3\" name=\"sel_method1\">Epidemology Based<input type=\"radio\" id=\"opt4\" name=\"sel_method1\" checked>Direct Entry<\/div>",
+		   "d3":"<div class=\"blk_dt31\"> <span class=\"sp2\" id=\"blk41\"> Primary I Patients <\/span><input type=\"text\" id=\"box11\" name=\"box11\"><input type=\"text\" id=\"box12\" name=\"box12\"> <\/div><br>",
+		   "d4":"<div class=\"blk_dt31\"><span class=\"sp2\">Primary I Patients  <\/span><input type=\"text\" id=\"box13\" name=\"box13\"  ><input type=\"text\" id=\"box14\" name=\"box14\"> <\/div><br>",
+		   "d5":"<div class=\"blk_dt31\"><span class=\"sp2\">Primary II Patients  <\/span><input type=\"text\" id=\"box15\" name=\"box15\"  ><input type=\"text\" id=\"box16\" name=\"box16\"  > <\/div><br>",
+		   "d6":"<div class=\"blk_dt31\"><span class=\"sp2\">Primary III Patients  <\/span><input type=\"text\" id=\"box17\" name=\"box17\"  ><input type=\"text\" id=\"box18\" name=\"box18\" > <\/div><br>",
+		   "d7":"<br><br><div class=\"blk_dt31\"><span class=\"sp2\" id='blk42'>Total<\/span> <input type=\"text\" id=\"box19\" name=\"box19\"><input type=\"text\" id=\"box20\" name=\"box20\"  ><\/div>"
+	   }
+	   
+	   
+   }
+}
