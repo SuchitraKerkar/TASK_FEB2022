@@ -23,7 +23,7 @@
   padding: 10px;
   border: 5px solid #00498D;
   font-family:Arial, Helvetica, sans-serif;
-  margin-top: 80px; 
+  margin-top: 20px; 
     
     
 }
@@ -92,8 +92,16 @@ color:white;
 {
 	background-color: #00498D;
 	color: #fff;
-	padding :10px;
+	height:160px;
+	padding:10px;
+	font-weight:bold;
 	
+}
+#p1{
+	font-size:17px;
+}
+#p2{
+	font-size:10px;
 }
 #blk3_1
 {
@@ -221,18 +229,71 @@ th{
 }
 
 input[type=text], select, textarea{
-  width: 45%;
+  width: 35%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  text-align:center;
 }
+
 .blk_dt
 {
-	padding: 25px;
+	padding: 5px;
 	font-size: 12px;
+	
 }
+#box11,#blk41,#box19
+{
+	visibility:hidden;
+}
+#blk42,#box20
+{
+	font-weight:bold;
+font-size:15px;
+text-align:center;
+}
+.sp{
+float:left;
+width:50px;
+margin-left:30px;
+}
+
+.sp2{
+width:60px;
+float:left;
+margin-left:10px;
+}
+
+
+.sp1{
+float:left;
+width:50px;
+margin-left:10px;
+font-weight:bold;
+font-size:15px;
+}
+#box5,#box7,#box9,#box4,#box12,#box13,#box15,#box17
+{
+	background-color: #ccc;
+	border: 1px solid black;
+}
+
+.blk_dt3 {
+    padding: 25px;
+    font-size: 12px;
+    display: block;
+    margin-left: 180px;
+}
+
+.blk_dt31 {
+    padding: 25px;
+    font-size: 12px;
+    display: inline;
+	margin-left: 45px;
+}
+
 #button0
 {
  padding: 8px;	
@@ -244,7 +305,7 @@ input[type=text], select, textarea{
   color:white;
   font-weight:bold;
   font-size: 12px;
-  margin-left:220px;
+  margin-left:40%;
   
 }
 #button1
@@ -270,6 +331,26 @@ input[type=text], select, textarea{
 #menu div{
 	padding:10px;
 }
+.sm{
+	
+	float:left;
+	width: 100px;
+	font-weight:bold;
+  font-size: 12px;
+}
+
+p.double {outline-style: double;
+width: 50%;
+  border: 15px solid #00498D;
+  padding: 50px;
+  margin: 20px;
+      margin-left: auto;
+	  outline-color:blue;
+	  text-align:center;
+	  color:white;
+	  background-color: #00498D;
+}
+
 /*tr:nth-child(even){background-color: #f2f2f2}*/
 
 
@@ -281,13 +362,36 @@ input[type=text], select, textarea{
 	#button0
 	{
 
-	  margin-left:60px;
+	  margin-left:30%;
 	  
 	}
 	.bar1, .bar2, .bar3 {
 		 width: 25px;
 		  height: 2px;
 		  
+	}
+	
+	.blk_dt3 {
+   
+    display: inline-grid;
+	margin:0;
+	}
+	.blk_dt31 {
+   
+    display: inline-grid;
+	margin:0;
+	}
+	
+	
+	
+	input[type=text], select, textarea{
+	width: 100%;
+	padding:10px;
+	margin-top: 10px
+	
+	}
+	.sp{
+		margin-left:0;
 	}
 }
  
@@ -299,5 +403,23 @@ input[type=text], select, textarea{
 
 	  margin-left:2px;
 	  
+	}
+	.blk_dt3 {
+   
+    display: inline-grid;
+	margin:0;
+	}
+	input[type=text], select, textarea{
+	width: 100%;
+	padding:10px;
+	margin-top: 10px
+	}
+	.blk_dt31 {
+   
+    display: inline-grid;
+	margin:0;
+	}
+	.sp{
+		margin-left:0;
 	}
 }

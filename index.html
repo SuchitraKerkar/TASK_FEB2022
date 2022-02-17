@@ -95,6 +95,17 @@
 	        <!--p class="blk_three_header"></p-->
 			 
 		 </div>
+		 
+		 <div id="blk4" style="display:none;"> 
+	   
+	        <!--p class="blk_three_header"></p-->
+			 
+		 </div>
+		 <div id="blk5" style="display:none;"> 
+	   
+	        <p class="double">Coming Soon!!</p>
+			 
+		 </div>
 			 
 	  </div>
 	  
@@ -157,11 +168,15 @@ $(function() {$('#tab1').click(); });
 				$("#blk1"). css("display", "");
 				$("#blk2"). css("display", "none");
 				$("#blk3"). css("display", "none");
+				$("#blk4"). css("display", "none");
+				$("#blk5"). css("display", "none");
 				
 			   
 				$("#tab1,#t1").addClass("active");
 				$("#tab2,#t2").removeClass("active");
 				$("#tab3,#t3").removeClass("active");
+				$("#tab4,#t4").removeClass("active");
+				$("#tab5,#t5").removeClass("active");
 				
 				
 						$.ajax({
@@ -192,15 +207,47 @@ $(function() {$('#tab1').click(); });
 						   
 						    $.each(data.block.blk2_part2,function(key,value){
 							
+							
 								block2_2+=value;
 							
 							});
+							
 						   
 						  /*BL 2 start*/
 						  block2_1=data.block.blk2_part1.d1;
 						  /**/
 						   
+						   /*BL 3 start*/
+						  // console.log(data.block.blk3);
+						   $.each(data.block.blk3,function(key,value){
 						   
+						   if(key=='d1')
+								 {
+									$("#blk3").html(value);
+									
+								 }
+							else{
+								$("#blk3").append(value);
+								}
+						   
+						   });
+						   /*BL 3 end*/
+						   
+						     /*BL 4 start*/
+						  // console.log(data.block.blk3);
+						   $.each(data.block.blk4,function(key,value){
+						   
+						   if(key=='d1')
+								 {
+									$("#blk4").html(value);
+									
+								 }
+							else{
+								$("#blk4").append(value);
+								}
+						   
+						   });
+						   /*BL 4 end*/
 						   
 						   $.ajax({
 							   
@@ -219,6 +266,8 @@ $(function() {$('#tab1').click(); });
 									 
 								 });
 								 /*BL 1 end structure and value*/
+								 	
+								
 								 
 								  $.each(dataval.block.block2_one,function(key1,value1)
 								 {
@@ -239,6 +288,9 @@ $(function() {$('#tab1').click(); });
 								 
 								 block2_1+=data.block.blk2_part1.d8;
 								 
+								 console.log(block2_2);
+
+								 
 								 $("#blk2").html(block2_1);
 								 $("#blk2").append(block2_2);
 								 
@@ -251,6 +303,134 @@ $(function() {$('#tab1').click(); });
 									 });
 									 
 									  /*BL 2 end structure and value*/
+									  
+									  /*BL 3 start*/
+									  
+									   $.each(dataval.block.block3,function(key1,value1)
+										 {
+										    	if(value1.tp==2 || value1.tp==4)
+												 {
+												  $(value1.tagid).val(value1.dataset);
+												 }
+												 
+												 if(value1.tp==3)
+												 {
+												   if(value1.dataset=='true')
+												   {
+												   
+												   $(value1.tagid).prop('checked', true);
+												   }
+												   else
+												   {
+												   
+												   $(value1.tagid).prop('checked', false);
+												   }
+												   
+												   
+												 }
+														
+											
+											 
+										 });
+									  /*BL 3 end*/
+									  
+									  
+									   /*BL 4 start*/
+									  
+									   $.each(dataval.block.block4,function(key1,value1)
+										 {
+										 
+										   if(value1.tp==2)
+											 {
+											  $(value1.tagid).val(value1.dataset);
+											 }
+											 
+											 if(value1.tp==3)
+											 {
+											  
+												if(value1.dataset=='true')
+												   {
+												   
+												   $(value1.tagid).prop('checked', true);
+												   }
+												   else
+												   {
+												   
+												   $(value1.tagid).prop('checked', false);
+												   }
+											 }
+											
+											 
+										 });
+									  /*BL 4 end*/
+									  
+									  
+									  //click button restore default
+									   $("#button1").click(
+										function() 
+										{
+										     /*BL 3 start*/
+									  
+									   $.each(dataval.block.block3,function(key1,value1)
+										 {
+										    	if(value1.tp==2 || value1.tp==4)
+												 {
+												  $(value1.tagid).val(value1.dataset);
+												 }
+												 
+												 if(value1.tp==3)
+												 {
+												   if(value1.dataset=='true')
+												   {
+												   
+												   $(value1.tagid).prop('checked', true);
+												   }
+												   else
+												   {
+												   
+												   $(value1.tagid).prop('checked', false);
+												   }
+												   
+												   
+												 }
+														
+											
+											 
+										 });
+									  /*BL 3 end*/
+									  
+									  
+									   /*BL 4 start*/
+									  
+									   $.each(dataval.block.block4,function(key1,value1)
+										 {
+										 
+										   if(value1.tp==2)
+											 {
+											  $(value1.tagid).val(value1.dataset);
+											 }
+											 
+											 if(value1.tp==3)
+											 {
+											  
+												if(value1.dataset=='true')
+												   {
+												   
+												   $(value1.tagid).prop('checked', true);
+												   }
+												   else
+												   {
+												   
+												   $(value1.tagid).prop('checked', false);
+												   }
+											 }
+											
+											 
+										 });
+									  /*BL 4 end*/
+									  
+									     alert("Restored Default Values Successfully");
+										});
 
  								 }
 								 });
@@ -261,7 +441,28 @@ $(function() {$('#tab1').click(); });
 								{
 								  
 								$(function() {$('#tab2,#t1').click(); });
-								});							
+								});	
+								
+								$("#opt2").click(
+								function() 
+								{
+								  $(function() {$('#tab4,#t4').click(); 
+								  
+								  $('#opt3').prop('checked', false);
+								  $('#opt4').prop('checked', true);
+								  });
+								});	
+								$("#opt3").click(
+								function() 
+								{
+								  
+								$(function() {$('#tab3,#t3').click(); 
+								  
+								  $('#opt2').prop('checked', false);
+								  $('#opt1').prop('checked', true);
+								
+								});
+								});	
 						
 						
 						   }
@@ -276,10 +477,14 @@ $(function() {$('#tab1').click(); });
 				$("#blk1"). css("display", "none");
 				$("#blk2"). css("display", "");
 				$("#blk3"). css("display", "none");
+				$("#blk4"). css("display", "none");
+				$("#blk5"). css("display", "none");
 			   
 				$("#tab1,#t1").removeClass("active");
 				$("#tab2,#t2").addClass("active");
 				$("#tab3,#t3").removeClass("active");
+				$("#tab4,#t4").removeClass("active");
+				$("#tab5,#t5").removeClass("active");
 		   
 		   });
 		   
@@ -289,11 +494,49 @@ $(function() {$('#tab1').click(); });
 				$("#blk1"). css("display", "none");
 				$("#blk2"). css("display", "none");
 				$("#blk3"). css("display", "");
+				$("#blk4"). css("display", "none");
+				$("#blk5"). css("display", "none");
 				
 			   
 				$("#tab1,#t1").removeClass("active");
 				$("#tab2,#t2").removeClass("active");
 				$("#tab3,#t3").addClass("active");
+				$("#tab4,#t4").removeClass("active");
+				$("#tab5,#t5").removeClass("active");
+				
+		   
+		   });
+		   
+	$("#t4,#tab4").click(function() {
+				
+				$("#blk1"). css("display", "none");
+				$("#blk2"). css("display", "none");
+				$("#blk3"). css("display", "none");
+				$("#blk4"). css("display", "");
+				$("#blk5"). css("display", "none");
+			   
+				$("#tab1,#t1").removeClass("active");
+				$("#tab2,#t2").removeClass("active");
+				$("#tab3,#t3").removeClass("active");
+				$("#tab4,#t4").addClass("active");
+				$("#tab5,#t5").removeClass("active");
+				
+		   
+		   });
+		   
+	$("#t5,#tab5").click(function() {
+				
+				$("#blk1"). css("display", "none");
+				$("#blk2"). css("display", "none");
+				$("#blk3"). css("display", "none");
+				$("#blk4"). css("display", "none");
+				$("#blk5"). css("display", "");
+			   
+				$("#tab1,#t1").removeClass("active");
+				$("#tab2,#t2").removeClass("active");
+				$("#tab3,#t3").removeClass("active");
+				$("#tab4,#t4").removeClass("active");
+				$("#tab5,#t5").addClass("active");
 				
 		   
 		   });
