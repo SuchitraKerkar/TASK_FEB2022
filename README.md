@@ -5,3 +5,4 @@ taskdetails
 2. tab1 and 2 are completed
 3. it is responsive 
 4. All tabs are added with the functionality mentioned in doc
+5. Pull
